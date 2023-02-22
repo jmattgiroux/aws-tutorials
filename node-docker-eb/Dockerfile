@@ -6,7 +6,7 @@ FROM node:12.7.0-alpine
 WORKDIR '/app'
 
 # Copy package.json to the working directory
-COPY package.json .
+COPY ./node-docker-eb/package.json .
 
 # Install any needed packages specified in package.json
 RUN yarn
